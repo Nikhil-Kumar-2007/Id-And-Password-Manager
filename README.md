@@ -1,60 +1,75 @@
-# Interactive Analysis of The Census of India, 2011
+# ID and Password Manager – Offline Credential Storage with Tkinter
 * * *
 
 ## Description
 
-This project presents an interactive dashboard for geospatial data analysis of the tips dataset using Python, Plotly, and Streamlit. The dataset contains visualization of 2011 India Census data at the district level and overall country level. The app allows users to interactively explore demographic insights such as population, literacy rates, gender ratio, and more.
+This project is a Tkinter-based Email ID and Password Manager that lets users store, search, update, and delete their credentials locally.
+All data is saved in a text file, with a GUI for easy interaction, password visibility toggle, and options to view or clear all records.
+It works completely offline and includes customizable colors and an about section for project details.
 
-### The dashboard features contain interactive visualization:-
+### Features Of Application Are:-
 
-#### 1. 🗺️ Choropleth Map (District-Level Visualization):
-Displays district-wise data from the 2011 Census (e.g., population, literacy rate, gender ratio, etc.) overlaid on the map of India.
-Each district is color-coded based on the selected metric, providing a clear visual comparison across regions.
+#### 1. Save Credentials
+User can input an email ID and password and save them into a file.
+Validates inputs (shows error if empty).
 
-#### 2. 📊 National-Level Overview:
-Alongside the map, summary statistics for all of India are presented for selected indicators — giving users both micro (district) and macro (national) insights.
+#### 2. Search Credentials
+Retrieves the password for a given email ID from the stored file.
+Handles cases where ID is missing or password is empty.
 
-#### 3. 🎚️ Feature Filters and Selection Options:
-Users can choose from multiple census indicators (such as total population, rural/urban population, literacy rate, etc.) using dropdowns. Filters may also include state-wise selection to zoom into specific states or regions, updating both the map and summary analysis accordingly.
+#### 3. Update Credentials
+Modify the password for an existing email ID.
+Checks if the ID exists before updating.
 
-#### 4. 🧭 Interactive Exploration Tools:
-Hovering over districts displays exact data values via tooltips.
-The map supports zooming, panning, and real-time updates based on selected filters.
+#### 4. Delete Credentials
+Removes a specific ID-password pair from storage.
+
+#### 5. how All Credentials
+Opens a new window showing all saved IDs and passwords.
+Includes a scrollbar for large data.
+Has options to clear the screen, change background color, or delete all data.
+
+#### 6. Clear All Data
+Deletes the IdDatabase.txt file entirely.
+
+#### 7. Password Visibility Toggle
+"Hide" (masked) or "Show" (plain text) password in the entry field using radio buttons.
+
+#### 8. Customizable UI
+Change label background colors using a color chooser.
+Multiple menus: File, Edit, Setting, About.
+
+#### 9. About Section
+Shows project information (“About GUI”) and developer details (“About Me”).
+
+#### 10. Error Handling
+Different message boxes for empty inputs, missing IDs, and missing passwords.
 * * *
 
-## Key Features:
-- Fully interactive and filterable dashboard using Streamlit
-- Dynamic visualizations created with Plotly
-- Real-time updates based on user inputs
-- Insightful UI to understand customer behavior
-* * *
-
-
-##  🧠 What This Helps With:
-1. Understanding regional disparities in population and literacy.
-2. Comparing development indicators between states and districts.
-3. Identifying high/low performing areas in terms of social demographics.
+##  What This Helps With:
+1. This tool helps you securely organize and manage your email IDs and passwords in one place without relying on internet-based services.
+2. It eliminates the need to remember multiple credentials, reduces the risk of losing them, and allows quick retrieval whenever needed.
+3. The offline storage ensures your data stays on your device, giving you full control and privacy.
 * * * 
 
 
 ## Technologies Used:
-- Python an Pandas – Data processing and logic
-- Plotly – Interactive graphs and charts
-- Streamlit – Web dashboard development
+- Python – Core programming language for logic and functionality.
+- Tkinter – Python’s standard GUI library for creating the application interface.
+- File Handling – To store, retrieve, update, and delete credentials in a local text file.
+- OS Module – For file operations and system-level interactions (if applicable in the code).
 * * *
 
 ## Requirements :-
 1. `Python = 3.12.3`
-2. `Plotly = 6.2.0`
-3. `pandas = 2.3.0`
-4. `streamlit = 1.46.0`
+2. `Tkinter = 8.6.14`
 * * *
 
 
 ## How To Run In Your Machine :-
 _Save Python file and give it to a name_
 
-_load all dataset files_
+_Save Ico file of Image With Same Name_
 
 ***Open Your Terminal/cmd and type***
 ``` python
