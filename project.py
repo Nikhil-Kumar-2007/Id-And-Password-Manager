@@ -380,7 +380,7 @@ lab.config(bg = "Yellow", fg = "Red")
 lab.pack(padx = 10, pady = 10, ipadx = 0, ipady = 0, expand = True, fill = "both")
 
 # label for id
-lab_id = Label(win, text = "Enter Your Email Id", font = ("Times New Roman",20,"bold"), bg = "Yellow", fg = "red", cursor = "Plus", justify = "center")
+lab_id = Label(win, text = "Enter Your Email Id", font = ("Times New Roman",20,"bold"), bg = "Yellow", fg = "red", cursor = "plus", justify = "center")
 lab_id.place(x = 270, y = 90, height = 40, width = 240)
 
 # entry box for id
@@ -389,7 +389,7 @@ ent_id = Entry(win, font = ("Times New Roman",20), bg = "white", cursor = "plus"
 ent_id.place(x= 190, y = 130, height = 45, width = 400)
 
 # label for password
-lab_pas = Label(win, text = "Enter Your password", font = ("Times New Roman",20,"bold"), bg = "Yellow", fg = "red", cursor = "Plus", justify = "center")
+lab_pas = Label(win, text = "Enter Your password", font = ("Times New Roman",20,"bold"), bg = "Yellow", fg = "red", cursor = "plus", justify = "center")
 lab_pas.place(x = 260, y = 200, height = 40, width = 280)
 
 # entry box for password
